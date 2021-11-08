@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> LOGIN PAGE</title>
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+	<div class="header">
+ 
+    
+		<img src="./logo.png">
+		<h2>justdoprep</h2>
+	   
+		</div>
+<div class="bg">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+	<img src="./icons8-person-90.png" width="100" height="100">
+   	<h2>LOGIN</h2>
+	   <form autocomplete="off">
+		<div class="input-icons">
+			
+		Email<input type="text" name="text3" id="_email" placeholder="Enter Email id" autocomplete="off"   required>
+		  </div>
+		  <div class="input-icons">
+			
+		Password<input type="password" name="password" id="_password" placeholder="Enter Password"  required>
+	  
+		  </div>
+		  </form>
+		  
+		  
+		  <a href="./Password_Reset.html"><div class="psw"><p>Forgot <b>Password?</b></p></div></a>
+		  <button type="submit" id="submitButton" onclick="readLoginData()" class="submit-btn"><b>Login</b></button>
+		  
+
+		  <p id="p2"><b>Don't have account?</b><button type="button" class="btn2" onclick="openRegister()">SignUp</button></p>
+		  <p id="p4"><b>Or Sign in With</b></p>
+		  <div class="form-footer-t1">
+			<div class="social">
+			 <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			 <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+			  <a href="https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession"><i class="fa fa-google"></i></a>
+			  <a href="https://in.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+
+			</div>
+		  </div>
+</div>
+<div class="card-back">
+	<h2>SignUp</h2>
+	<div class="Form">
+	<form name="_form" id="_form" autocomplete="off">
+	<div class="input-icons">
+              
+	Name<input type="text" name="text1" id="name" class="text2"  placeholder="Enter Full Name" autocomplete="off" required>
+	  </div>
+	  <div class="input-icons">
+		
+	Email<input type="Email" name="email1" id="email" placeholder="Enter Your Email" autocomplete="off" required>
+  
+	  </div>
+	  <div class="input-icons">
+	Mobile Number<input type="text" name="text3" id="mobile" placeholder="Enter your Mobile Number" maxlength="10" autocomplete="off" required >
+	  </div>
+	  <div class="input-icons">
+	Password<input type="password" name="password1" id="password" placeholder="Enter your Password" autocomplete="off" required >
+	  </div>
+	  </form>
+	  </div>
+	  <button type="submit" id="Register"><b>Register</b></button>
+	  <p id="p2">Already have an Account <button type="button" class="btn1" onclick="openLogin()"><b>Signin</b></button></p>
+	 
+	  </div>
+	  
+        </div>
+      </div> 
+    </div>  
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+    <!-- <script src="./script.js"></script>  -->
+	<script src="./fireConfig.js"></script>
+	<script src="script1.js"></script> 
+	
+</body>
+</html>

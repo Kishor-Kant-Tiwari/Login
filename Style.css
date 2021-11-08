@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+h2{
+    align-items: center;
+    text-align: center;
+}
+.card-back h2{
+    margin-bottom: 20px;
+
+}
+.card-password h2{
+    margin-bottom: 53px;
+
+}
+.card-front h2{
+    margin-bottom: 33px;
+}
+.header
+        {
+            width: 100%;
+            height: 69px;
+            background-color: #010711;
+            position: fixed;
+            top: 0;            
+            display: flex;
+            justify-content: center;
+            
+            display: flex;
+        
+        }
+        .header img
+        {
+            height: 69px;
+            width: 69px;
+            margin-right: 4px;
+            
+        }
+        .header h2
+        {            
+            line-height: 69px;
+            text-align: center;
+            color: white;  
+            font-family: 'Poiret One', cursive;        
+        }
+		.input-icons i{
+			position: absolute;
+			
+		
+		}
+		
+		.input-icons {
+		   
+			margin-bottom: 20px;
+			color: #ffffff;
+			
+		}
+		
+		.icon {
+			padding: 29px 0px;
+			
+		
+		
+		}
+		
+		
+body {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    
+    background:url('./secondPng.svg') fixed ;
+    
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-position: center;
+    flex-wrap: wrap;
+    background-size: 827px;
+    
+    
+    
+}
+input:focus::-webkit-input-placeholder {
+    font-size: .75em;
+    position: fixed;
+    top: 15px; 
+    transition: 0.2s ease-out;
+}
+
+input::-webkit-input-placeholder {
+    transition: 0.2s ease-in;
+}
+
+input[type="email"]:focus, input[type="password"]:focus,input[type="text"]:focus {
+    padding-bottom: 0px;
+    transition: 0.2s ease-in;
+}
+
+input[type="email"], input[type="password"],input[type="text"] {
+    height: 50px;
+    transition: 0.2s ease-in;
+}
+	.bg{
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+	}
+.card{
+	background-color: rgba(0, 0, 0, 0.5);
+    width: 365px;
+    height: 554px;
+    padding: 20px;
+    opacity: 1.0;
+    transition: all 0.5s;
+    z-index: 0;
+    margin-top: 140px;
+    flex-wrap: wrap;
+    
+}
+.card-front img{
+    margin-left: 88px;
+    margin-top: -64px;
+   
+    
+
+   
+}
+.card-password img{
+    margin-left: 88px;
+    margin-top: -42px;
+   
+    
+
+   
+}
+
+.card:hover{
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  
+    transform: scale(1.1);
+    flex-wrap: wrap;
+}
+.inner-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card-front{
+	padding: 20px;
+    color: #fff;
+    margin-top: 21px;
+    flex-wrap: wrap;
+	backface-visibility: hidden;
+}
+ 
+.card-back{
+	transform: rotateY(180deg);
+    
+}
+.card-back{
+	padding: 20px;
+    color: #fff;
+    margin-top: -520px;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
+
+}
+.card-password{
+    padding: 20px;
+    color: #fff;
+    margin-top: 9px;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
+
+}
+
+
+
+
+input[type=email]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+   
+}
+input[type=password]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-color: white;
+    color: white;
+}
+input[type=text]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-color: white;
+    color: white;
+}
+input[type=tel]{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-color: white;
+    color: white;
+}
+/*canvas[type=captcha]{
+    padding: 10px 30px;
+    margin-bottom: 50px;
+}*/
+
+.card-front p {
+    font-size: 12px;
+    color: white ;
+    padding: 20px 0px;
+    text-align: right;
+    display: inline-block;
+    margin-left: 180px;
+}
+.card-front .psw p {
+    font-size: 14px;
+    color: white ;
+    padding: 20px 0px;
+    text-align: right;
+    position: -webkit-sticky;
+    margin-left: 147px;
+    cursor: pointer;
+    margin-top: -14px;
+   background-position: fixed;
+   outline: none;
+   border: none;
+    
+ 
+    
+    
+}
+::placeholder {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button[type='submit']
+{
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(92, 60, 60);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 6px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+button[type='submit']:hover{
+    background-color: red;
+}
+
+.card-front p {
+    font-size: 12px;
+    color: #ffffff;
+    padding: 17px 0;
+    text-align: right;
+}
+
+.card-front p b  {
+    color: #ffffff;
+}
+.card-front p#p2{
+    display: inline-block;
+    margin-left: 78px;
+    margin-top: -20px;
+    font-size: 15px;
+    display: inline-block;
+}
+.card-front p#p2 .btn2{
+    
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: black;
+    color: white;
+    
+}
+.card-front p#p2 .btn2:hover{
+    
+    background-color: rgb(167, 78, 5);
+    
+}
+.card-front p#p4{
+    text-align: center;
+    margin-top: -9px;
+    margin-left: 90px;
+    font-size: 15px;
+    
+
+}
+
+
+.form-footer-t1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-footer-t1 .social i{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    width: 65px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 5px #3498db;
+    margin-bottom: -10px;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+.form-footer-t1 .social .fa-facebook:hover{
+    background-color: #3b5999;
+}
+.form-footer-t1 .social .fa-twitter:hover{
+    background-color: #55acee;
+}
+.form-footer-t1 .social .fa-google:hover{
+    background-color: #dd4b39;
+}
+.form-footer-t1 .social .fa-linkedin:hover{
+    background-color: #0E76A8;
+}
+.card-back p#p2{
+    
+    margin-left: 19px;
+    margin-top: 26px;
+}
+
+.card-back p#p2 .btn1{
+    
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    
+}
+.card-back p#p2 .btn1:hover{
+    
+   background-color: rgb(167, 78, 5);
+}
+.card-password p#p2{
+    font-size: 19px;
+    margin-left: 5px;
+    margin-top: 61px;
+}
+
+.card-password p#p2 .btn1{
+    
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px 16px;
+    background-color: black;
+    color: white;
+    
+}
+.card-password p#p2 .btn1:hover{
+    
+   background-color: rgb(167, 78, 5);
+}
