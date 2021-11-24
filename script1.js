@@ -56,7 +56,7 @@ function readLoginData(){
   if(_username != "" && _password != ""){
    // console.log(_password+_username);
      var result = firebase.auth().signInWithEmailAndPassword(_username,_password);
-     window.open("you have successful login");
+     alert("you have successful login");
     
    
      result.catch(function(error){
