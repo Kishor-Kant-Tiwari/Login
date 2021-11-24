@@ -57,7 +57,7 @@ function readLoginData(){
    // console.log(_password+_username);
      var result = firebase.auth().signInWithEmailAndPassword(_username,_password);
      a.href="https://ankit-kumar-sharma.github.io/justdoprep/#";
-    // alert("You have Successful Login");
+   
      result.catch(function(error){
        var errorCode= error.code;
        var errMessage=error.message;
