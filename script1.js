@@ -56,7 +56,7 @@ function readLoginData(){
   if(_username != "" && _password != ""){
    // console.log(_password+_username);
      var result = firebase.auth().signInWithEmailAndPassword(_username,_password);
-     window.location.href = "http://stackoverflow.com";
+     window.open("http://stackoverflow.com");
    
      result.catch(function(error){
        var errorCode= error.code;
